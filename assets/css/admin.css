@@ -1,0 +1,145 @@
+/* Existing styles remain... */
+
+/* Loading States */
+.is-loading {
+    position: relative;
+    color: transparent !important;
+}
+
+.is-loading .spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+/* Dialog */
+.xautoposter-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 159900;
+}
+
+.xautoposter-dialog-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.xautoposter-dialog-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Tooltips */
+.tooltipster-light {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tooltipster-light .tooltipster-content {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 8px 12px;
+    color: #1d2327;
+}
+
+/* Enhanced Buttons */
+.button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.button .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Enhanced Tables */
+.posts-table {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.posts-table th {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.posts-table td {
+    transition: background-color 0.2s ease;
+}
+
+.posts-table tr:hover td {
+    background-color: #f0f0f1;
+}
+
+/* Status Indicators */
+.status-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-indicator.success {
+    background: #d1e7dd;
+    color: #0a3622;
+}
+
+.status-indicator.warning {
+    background: #fff3cd;
+    color: #664d03;
+}
+
+.status-indicator.error {
+    background: #f8d7da;
+    color: #58151c;
+}
+
+/* Keyboard Shortcuts */
+.keyboard-shortcut {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 6px;
+    background: #f0f0f1;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #50575e;
+}
+
+.keyboard-shortcut kbd {
+    padding: 1px 4px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: monospace;
+}
